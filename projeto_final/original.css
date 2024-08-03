@@ -1,0 +1,78 @@
+h1 {
+    font-family: 'Arial Black', sans-serif; /* Uma fonte poderosa para um título grandioso */
+    color: goldenrod; /* Vermelho fogo, como o sangue dos Targaryen */
+    text-align: center; /* Centralizando para reinar absoluto */
+    font-size: 3rem; /* Tamanho digno de um rei */
+  }
+  
+  h2 {
+    font-family: 'Times New Roman', serif; /* Uma fonte clássica para uma história épica */
+    color: #d9534f; /* Cinza escuro para um tom sério */
+    text-align: center; /* Centralizando para harmonia visual */
+    font-size: 1.5rem; /* Tamanho suficiente para ser notado */
+    margin-top: 1rem; /* Espaço para respirar entre título e subtítulo */
+  }
+  
+  nav ul {
+    list-style: none; /* Removendo os marcadores padrão */
+    margin: 0; /* Removendo margens indesejadas */
+    padding: 0; /* Removendo preenchimento indesejado */
+  }
+  
+  nav li {
+    display: inline-block; /* Transformando as listas em elementos lado a lado */
+    margin-right: 2rem; /* Espaço entre os itens do menu */
+  }
+  
+  nav a {
+    text-decoration: none; /* Removendo o sublinhado padrão */
+    color: #333; /* Preto clássico para boa legibilidade */
+    font-weight: bold; /* Um pouco mais de peso para destacar */
+  }
+  
+  nav a:hover {
+    color: #d9534f; /* Mudando a cor ao passar o mouse */
+  }
+  
+  nav {
+    text-align: center; /* Centralizando o texto da navegação */
+    margin-top: 2rem; /* Espaço entre a navegação e o título */
+  }
+  
+  aside nav {
+    background-color: #f2f2f2; /* Um cinza claro para o fundo */
+    padding: 1rem; /* Espaço interno para respirar */
+    border-radius: 10px; /* Arredondando os cantos para um visual moderno */
+  }
+  
+  aside ul {
+    list-style: none; /* Removendo os marcadores padrão */
+    margin: 0; /* Removendo margens indesejadas */
+    padding: 0; /* Removendo preenchimento indesejado */
+  }
+  
+  aside li {
+    margin-bottom: 1rem; /* Espaço entre os itens do menu */
+  }
+  
+  aside a {
+    text-decoration: none; /* Removendo o sublinhado padrão */
+    color: #333; /* Preto clássico para boa legibilidade */
+    font-weight: bold; /* Um pouco mais de peso para destacar */
+  }
+  
+  aside a:hover {
+    color: #d9534f; /* Mudando a cor ao passar o mouse */
+  }
+  
+  aside {
+    position: relative; /* Posicionando o aside de forma fixa */
+    top: 10; /* Topo da tela */
+    left: 0; /* Esquerda da tela */
+    height: 35vh; /* Altura total da tela */
+    width: 200px; /* Largura do aside */
+    background-color: #f2f2f2; /* Cor de fundo do aside */
+    padding: 1rem; /* Espaço interno no aside */
+    border-radius: 10px; /* Arredondando os cantos do aside */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
