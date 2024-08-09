@@ -81,8 +81,8 @@ h1 {
     text-align: center;
     max-width: 800px; /* Limitando a largura para melhor visualização */
     margin: 0 auto; /* Centralizando na tela */
-    padding: 10rem; /* Espaço interno para respirar */
-    margin-left: 750px; /* Espaço à esquerda para o aside */
+    padding: 1rem; /* Espaço interno para respirar */
+    
   }
 
   main {
@@ -92,6 +92,14 @@ h1 {
     align-items: center; /* Alinhando horizontalmente no centro */
     justify-content: center; /* Alinhando verticalmente no centro */
     min-height: 30vh; /* Altura mínima para ocupar toda a tela */
+  }
+
+  .container {
+    display:flex;
+    flex-direction:column;
+    justify-content: center'
+    align-content:center
+    align-itens: flex-start;
   }
 
   img {
@@ -130,7 +138,7 @@ p {
   }
 
   footer {
-    background-color: #aeaeae; /* Preto para um rodapé discreto */
+    background-color: #e76666; /* Preto para um rodapé discreto */
     color: white; /* Texto branco para melhor contraste */
     text-align: center; /* Centralizando o texto */
     padding: 1rem; /* Espaço interno para respirar */
@@ -140,4 +148,4 @@ p {
     margin-bottom: 0.5rem; /* Menor espaçamento entre parágrafos no rodapé */
   }
 
-  <p class="destaque">Este parágrafo é muito importante!</p>
+  

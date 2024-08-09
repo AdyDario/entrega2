@@ -69,7 +69,7 @@ aside {
   position: relative; /* Posicionando o aside de forma fixa */
   top: 10; /* Topo da tela */
   left: 0; /* Esquerda da tela */
-  height: 35vh; /* Altura total da tela */
+  height: 15vh; /* Altura total da tela */
   width: 200px; /* Largura do aside */
   background-color: #f2f2f2; /* Cor de fundo do aside */
   padding: 1rem; /* Espaço interno no aside */
@@ -79,10 +79,10 @@ aside {
 
 main {
   text-align:center;
-  max-width: 1000px; /* Limitando a largura para melhor visualização */
+  max-width: 800px; /* Limitando a largura para melhor visualização */
   margin: 0 auto; /* Centralizando na tela */
-  padding: 10rem; /* Espaço interno para respirar */
-  margin-left: 100px; /* Espaço à esquerda para o aside */
+
+ 
 }
 
 main {
@@ -94,10 +94,24 @@ main {
   min-height: 30vh; /* Altura mínima para ocupar toda a tela */
 }
 
+.container2{
+  display:flex;
+  flex-direction:column;
+  justify-content: center'
+  align-content:center
+  align-itens: flex-start;
+}
+
 img {
   width: 200px; /* Largura da imagem */
   height: 200px; /* Altura da imagem */
 }
+
+.img1{
+  width: 600px; /* Largura da imagem */
+  height: 600px; /* Altura da imagem */
+}
+
 
 article {
   background-color: #fff; /* Branco para destacar o conteúdo */
@@ -111,7 +125,7 @@ h3 {
   img {
 width: 100%; /* Imagem preenchendo a largura total do artigo */
 display:flex /* Para a imagem ficar em linha separada */
-margin-bottom: 1rem; /* Espaço entre a imagem e o parágrafo */
+
 }
 
 h4 {
