@@ -66,10 +66,10 @@ aside a:hover {
 }
 
 aside {
-  position: relative; /* Posicionando o aside de forma fixa */
+  position:absolute; /* Posicionando o aside de forma fixa */
   top: 10; /* Topo da tela */
   left: 0; /* Esquerda da tela */
-  height: 15vh; /* Altura total da tela */
+  height: 33vh; /* Altura total da tela */
   width: 200px; /* Largura do aside */
   background-color: #f2f2f2; /* Cor de fundo do aside */
   padding: 1rem; /* Espaço interno no aside */
@@ -77,12 +77,11 @@ aside {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
+
 main {
   text-align:center;
   max-width: 800px; /* Limitando a largura para melhor visualização */
   margin: 0 auto; /* Centralizando na tela */
-
- 
 }
 
 main {
@@ -108,8 +107,8 @@ img {
 }
 
 .img1{
-  width: 600px; /* Largura da imagem */
-  height: 600px; /* Altura da imagem */
+  width: 400px; /* Largura da imagem */
+  height: 400px; /* Altura da imagem */
 }
 
 

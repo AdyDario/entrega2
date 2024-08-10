@@ -66,10 +66,10 @@ h1 {
   }
   
   aside {
-    position: relative; /* Posicionando o aside de forma fixa */
+    position:absolute; /* Posicionando o aside de forma fixa */
     top: 10; /* Topo da tela */
     left: 0; /* Esquerda da tela */
-    height: 35vh; /* Altura total da tela */
+    height: 33vh; /* Altura total da tela */
     width: 200px; /* Largura do aside */
     background-color: #f2f2f2; /* Cor de fundo do aside */
     padding: 1rem; /* Espaço interno no aside */
@@ -80,10 +80,9 @@ h1 {
 
   main {
     text-align:center;
-    max-width: 1000px; /* Limitando a largura para melhor visualização */
+    max-width: 800px; /* Limitando a largura para melhor visualização */
     margin: 0 auto; /* Centralizando na tela */
-    padding: 10rem; /* Espaço interno para respirar */
-    margin-left: 100px; /* Espaço à esquerda para o aside */
+    
   }
   
   main {
@@ -95,9 +94,22 @@ h1 {
     min-height: 30vh; /* Altura mínima para ocupar toda a tela */
   }
 
+  .container2{
+    display:flex;
+    flex-direction:column;
+    justify-content: center'
+    align-content:center
+    align-itens: flex-start;
+  }
+
   img {
-    width: 800px; /* Largura da imagem */
-    height: 800px; /* Altura da imagem */
+    width: 200px; /* Largura da imagem */
+    height: 200px; /* Altura da imagem */
+  }
+
+  .img1 {
+    width: 400px; /* Largura da imagem */
+    height: 400px; /* Altura da imagem */
   }
   
   article {
@@ -113,4 +125,41 @@ h1 {
   width: 100%; /* Imagem preenchendo a largura total do artigo */
   display:flex /* Para a imagem ficar em linha separada */
   margin-bottom: 1rem; /* Espaço entre a imagem e o parágrafo */
+  }
+
+  p {
+    font-family: 'Arial', sans-serif; /* Fonte limpa para melhor leitura */
+    line-height: 1.5; /* Aumenta o espaçamento entre linhas para melhor respiração do texto */
+    color: #333; /* Preto clássico para boa legibilidade */
+    margin-bottom: 1rem; /* Espaço entre parágrafos */
+  }
+  
+  article ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Transforma a lista em um container flexbox */
+    flex-wrap: nowrap; /* Permite que os itens se quebrem em múltiplas linhas */
+  }
+  
+  article li {
+    width: 13.33%; /* Cada item ocupará 1/3 da largura total */
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  }
+  
+  article li img {
+    max-width: 100%; /* Garante que as imagens não ultrapassem a largura do container */
+    height: auto;
+  }
+
+  footer {
+    background-color: #aeaeae; /* Preto para um rodapé discreto */
+    color: white; /* Texto branco para melhor contraste */
+    text-align: center; /* Centralizando o texto */
+    padding: 1rem; /* Espaço interno para respirar */
+  }
+  
+  footer p {
+    margin-bottom: 0.5rem; /* Menor espaçamento entre parágrafos no rodapé */
   }
