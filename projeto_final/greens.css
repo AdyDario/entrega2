@@ -97,7 +97,7 @@ h1 {
   .container2{
     display:flex;
     flex-direction:column;
-    justify-content: center'
+    justify-content:center
     align-content:center
     align-itens: flex-start;
   }

@@ -82,11 +82,6 @@ h1 {
     max-width: 1000px; /* Limitando a largura para melhor visualização */
     margin: 0 auto; /* Centralizando na tela */
     padding: 1rem; /* Espaço interno para respirar */
-    
-  }
-
-  main {
-    /* ... outras propriedades ... */
     display: flex; /* Ativando layout flexbox */
     flex-direction: column; /* Definindo direção da coluna */
     align-items: center; /* Alinhando horizontalmente no centro */
@@ -148,4 +143,4 @@ p {
     margin-bottom: 0.5rem; /* Menor espaçamento entre parágrafos no rodapé */
   }
 
-  
+ 
