@@ -1,4 +1,3 @@
-/* Reset básico para garantir consistência */
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +6,11 @@
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1,6;
   background-color: #f4f4f4;
 }
 
 .header {
+  grid-area:header;
   background-color: #333;
   color: #fff;
   text-align: center;
@@ -20,22 +19,23 @@ body {
 
 .header h1 {
   font-size: 2.5rem;
-  color:darkgoldenrod
+  color: darkgoldenrod;
+
 }
 
 .header h2 {
   font-size: 1.2rem;
-  color:crimson
+  color: crimson;
 }
 
 nav {
-  background-color:#858080;
-  color: #fff;
+  background-color: #858080;
+  color: #000000;
   padding: 1rem;
 }
 
 .nav1 {
-  background-color:#858080;
+  background-color: #858080;
   color: #fff;
   padding: 1rem;
   list-style-type:none;
@@ -43,11 +43,14 @@ nav {
   flex-direction:row;
   justify-content:center;
   gap: 1rem;
+  font-size: 20px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -66,49 +69,54 @@ nav ul li a:hover {
   background-color: #555;
   border-radius: 5px;
 }
-
-.container {
-  display: grid;
-  grid-template-columns: 3fr 1fr; /* Duas colunas, uma maior para o main e uma menor para a sidebar */
-  gap: 1rem;
-}
-
-main {
-  background-color: #fff;
-  padding: 5rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  grid-column: 1 / 2; /* Ocupa a primeira coluna */
+.content-container {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "header header" "sidebar main";
+  gap: 2rem; /* Espaço entre o main e o aside */
+ 
 }
 
 .main-content {
-  margin-bottom: 2rem;
-}
-
-.image-sidebar-container {
-  display: flex; /* Alinha a imagem e a sidebar lado a lado */
-  gap: 1rem; /* Espaço entre a imagem e a sidebar */
-  align-items: flex-start; /* Alinha a imagem e a sidebar ao topo */
-  margin-bottom: 2rem; /* Espaço abaixo do contêiner */
-}
-
-.img1 {
-  flex: 3; /* A imagem ocupará 3 partes do espaço disponível */
-  max-width: 100%; /* Garante que a imagem não ultrapasse seu contêiner */
-  height: auto;
+  grid-area:auto;
+  background-color: #fff;
+  padding: 1.5rem;
+  padding-bottom: 1,5rem;
   border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  gap: 2px;
 }
+
+.img {
+  max-width: 50%; /* Garante que a imagem não ultrapasse o contêiner */
+  height: auto;
+  width: auto;
+  min-width: 200px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.subtitle{
+font-size: 25px;
+color:crimson;
+margin-bottom: 15px;
+}
+
 
 .sidebar {
-  flex: 1; /* A sidebar ocupará 1 parte do espaço disponível */
+  grid-area:auto;
   background-color: #e2e2e2;
   padding: 1rem;
   border-radius: 8px;
-  grid-column: 2/3;
+  box-shadow: 0 0 10px rgba(153, 153, 153, 0.1);
+  text-align:justify;
+  font-size: 20px;
 }
 
 .sidebar h2 {
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .sidebar nav ul {
@@ -122,7 +130,7 @@ main {
 
 .sidebar nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   transition: color 0.3s;
 }
 
@@ -130,53 +138,41 @@ main {
   color: #007bff;
 }
 
-main h3 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-main article p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
-  padding: 10px;
-  gap: 5px;
-}
-
-main article ul {
-  list-style: none;
-  padding: 0;
+ul{
   display: flex;
-  flex-wrap: nowrap;
-  gap: 1rem;
+  flex-wrap: wrap;
+  flex-direction:row;
+  text-align:center;
 }
 
-main article ul li {
-  flex: 1 1 calc(50% - 1rem);
-  margin-bottom: 1rem;
-  font-weight: 100;
-  font-size: medium;
-  color: #333;
+.ul1{
+  display:row;
+  flex-wrap:wrap;
+  flex-direction:row;
+  text-align:center;
+  align-items: center;
+  color: #000000;
+  background-color: #ffffff;
 }
 
-main article ul img {
-  max-width: 100px;
-  height: auto;
-  border-radius: 8px;
+.imgtrailer {
   display: block;
-  margin: 0.5rem auto;
+  width: 210px; /* Define a largura da imagem */
+  height: 200px; /* Define a altura da imagem */
+  cursor: pointer; /* Muda o cursor para mão ao passar sobre a imagem */
+  margin-bottom: 5px;
 }
 
-main article p:last-of-type {
-  margin-top: 1rem;
-  font-style: italic;
-  color: #333;
+p{
+  font-size: 20px;
+  text-shadow: 10px #e20909;
+  text-decoration: #007bff;
+  gap: 5px;
+  margin-bottom: 35px;
 }
 
 footer {
-  background-color:#858080;
+  background-color: #858080;
   color: #fff;
   text-align: center;
   padding: 1rem;
